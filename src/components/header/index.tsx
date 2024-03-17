@@ -11,7 +11,7 @@ export function Header() {
     const { signed, loadingAuth } = useContext(AuthContext);
 
     return (
-        <div className="w-full flex items-center justify-center h-16 bg-white drop-shadow mb-4">
+        <div className="w-full flex items-center justify-center h-18 bg-white drop-shadow mb-4">
             <header className='flex w-full max-w-7xl items-center justify-between px-4'>
                 <Link to={"/"}>
                     <img src={logoImg} alt="Putaria Telegram" />

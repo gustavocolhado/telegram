@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Container } from "../../components/container"
-import { FaWhatsapp } from "react-icons/fa";
+import { FaTelegram } from "react-icons/fa";
 import { useNavigate, useParams } from "react-router-dom";
 
 import { getDoc, doc } from "firebase/firestore";
@@ -114,12 +114,12 @@ export function GroupDetail() {
                     <p className="mb-4">{group?.description}</p>
 
                     <a
-                    className="bg-green-500 w-full text-white flex items-center justify-center gap-2 my-6 h-11 text-xl rounded-lg font-medium cursor-pointer"
+                    className=" bg-blue-500 w-full text-white flex items-center justify-center gap-2 my-6 h-11 text-xl rounded-lg font-medium cursor-pointer"
                     href={group?.telegram}
                     target="_blank"
                     >
                     Entrar no Grupo
-                    <FaWhatsapp size={26} color="#FFF" />
+                    <FaTelegram size={26} color="#FFF" />
                     </a>
 
                 </main>
